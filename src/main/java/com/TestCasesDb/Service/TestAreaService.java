@@ -17,11 +17,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class TestAreaService {
 	
-	@Autowired
-    TestAreaRepository testAreaRepository;
+	
+	 private final TestAreaRepository testAreaRepository;
 
-    @Autowired
-    TestAreaMapper testAreaMapper;
+    
+	 private final TestAreaMapper testAreaMapper;
     
     public void delete(TestAreaDto testAreaDto) {
         TestArea testArea = testAreaMapper.toEntity(testAreaDto);
